@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node src/main.ts"
+    "crawler:dev": "ts-node src/crawler/main.ts"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
@@ -13,6 +13,7 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "duckdb": "^0.10.1"
+    "duckdb": "^0.10.1",
+    "puppeteer": "^22.6.1"
   }
 }
