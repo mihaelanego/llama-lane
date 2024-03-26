@@ -1,12 +1,7 @@
-import fs from "fs";
 import duckdb from "duckdb";
 import { CrawlItem } from "./crawler";
 
 export async function initOutputDB(path: string): Promise<duckdb.Database> {
-  if (fs.existsSync(path)) {
-    fs.unlinkSync(path);
-  }
-
   const db = new duckdb.Database(path);
 
   return new Promise((resolve, reject) => {

@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "crawler:dev": "ts-node src/crawler/main.ts"
+    "crawler:dev": "ts-node src/crawler/main.ts",
+    "extractor:dev": "ts-node src/extractor/main.ts"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
