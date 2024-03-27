@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "crawler:dev": "ts-node src/crawler/main.ts",
-    "extractor:dev": "ts-node src/extractor/main.ts"
+    "extractor:dev": "ts-node src/extractor/main.ts",
+    "excel:dev": "ts-node src/excel-writer/main.ts"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "duckdb": "^0.10.1",
+    "exceljs": "^4.4.0",
     "puppeteer": "^22.6.1"
   }
 }
